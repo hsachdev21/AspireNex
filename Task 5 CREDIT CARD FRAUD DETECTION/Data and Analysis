@@ -1,0 +1,24 @@
+Link to the dataset as given in mail: https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud 
+
+I had written the code for ".csv" file downloaded from above link.
+
+Also, from the analysis of the given data:
+Lets's consider this
+		            Prediction fraud(+)     Prediction not fraud(-)
+Fraud(+)	      True Positive		        False Negative
+Not Fraud(-)    False Positive		      True Negative
+
+FOR UNBALANCED DATA:
+			                  Precision   Recall    F1-Score
+Shallow_nn		             0.75      0.89      0.81 
+logistic_Regression        0.76      0.70      0.73
+Random_Forest		           0.80      0.65      0.72
+
+Clearly validating by different models, we found 
+for F1-score: Shallow_nn > logistic_Regression > Random_Forest
+for Recall  : Shallow_nn > logistic_Regression > Random_Forest
+for Precision:Shallow_nn < logistic_Regression < Random_Forest
+
+While for Balanced Data:
+
+
