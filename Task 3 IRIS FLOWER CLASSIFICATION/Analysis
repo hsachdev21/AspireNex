@@ -1,0 +1,9 @@
+By analysis of the data and using different models:
+
+The accuracy of different models are as follows for the test data:
+DecisionTree_Accuracy:  97.77%
+LogisticRegression_Accuracy:  95.55%
+KNeighborsClassifier_Accuracy:  91.11%
+
+This clearly implies that the accuracy of DecisionTree > LogisticRegression > KNeighborsClassifier.
+Furthermore this accuracy may vary slightly as the train data and test data are splitted randomly.
