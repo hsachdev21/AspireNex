@@ -9,10 +9,10 @@ Fraud(+)	      True Positive		        False Negative
 Not Fraud(-)    False Positive		      True Negative
 
 FOR UNBALANCED DATA:
-			                  Precision   Recall    F1-Score
-Shallow_nn		             0.75      0.89      0.81 
-logistic_Regression        0.76      0.70      0.73
-Random_Forest		           0.80      0.65      0.72
+				 	Precision   Recall    F1-Score
+Shallow_nn				0.75      0.89      0.81 
+logistic_Regression			0.76      0.70      0.73
+Random_Forest				0.80      0.65      0.72
 
 Clearly validating by different models, we found 
 for F1-score: Shallow_nn > logistic_Regression > Random_Forest
@@ -21,4 +21,26 @@ for Precision:Shallow_nn < logistic_Regression < Random_Forest
 
 While for Balanced Data:
 
+LogisticRegression:
+			precision    recall  f1-score   
 
+   Not Fraud       	0.96      0.93      0.94        
+       Fraud       	0.93      0.96      0.94
+accuracy:94%
+
+RandomForestClassifier:
+			precision    recall  f1-score   
+
+   Not Fraud      	 0.69      1.00      0.82        
+       Fraud       	 1.00      0.54      0.70  
+accuracy: 77%
+
+So, Clearly Accuracy of Logistic Regression model is higher ie 94%, so we will use Logistic Regression for the test data.
+The results are as follows on the test data using Logistic Regression Model:
+
+              precision    recall  f1-score   support
+
+   Not Fraud       0.92      0.96      0.94        73
+       Fraud       0.95      0.91      0.93        69
+
+    accuracy                           0.94       142
